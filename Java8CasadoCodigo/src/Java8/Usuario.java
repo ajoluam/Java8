@@ -1,4 +1,4 @@
-package br.com.casadocodigo.java8;
+package Java8;
 
 class Usuario {
 

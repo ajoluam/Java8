@@ -1,4 +1,4 @@
-package br.com.casadocodigo.java8;
+package Java8;
 
 import java.util.Arrays;
 import java.util.List;
