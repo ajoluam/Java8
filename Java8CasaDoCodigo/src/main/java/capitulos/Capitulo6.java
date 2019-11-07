@@ -38,8 +38,13 @@ public class Capitulo6 {
 		//todos os usarios nulos de nossa lista irão para o começo na hora ordenação
 		usuarios.sort(Comparator.nullsFirst(Comparator.comparing(Usuario::getNome)));
 		
-		//se quisermos ordenar em ordem inversa
-		usuarios.sort(Comparator.comparing(Usuario::getNome).reversed());
+		//lista do manor para o maior em relação aos pontos
+		usuarios.sort(Comparator.comparing(Usuario::getPontos));
+		usuarios.forEach(u->System.out.println(u.getNome() + u.getPontos()));
+		
+		//se quisermos ordenar em ordem inversa (do maior para o menor) - hanking
+		usuarios.sort(Comparator.comparing(Usuario::getPontos).reversed());
+		usuarios.forEach(u->System.out.println(u.getNome() + u.getPontos()));
 		
 		//referenciando metodos que recebem argumentos
 		usuarios.forEach(System.out::println);
