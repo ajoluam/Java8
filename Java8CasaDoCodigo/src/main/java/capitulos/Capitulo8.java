@@ -19,6 +19,7 @@ public class Capitulo8 {
 
 		// pegei uma lista, filtrei para os com pontos maiores que 100, ordenei por nome
 		// e transformei numa lista
+		// No Stream o método de ordenação é o *sorted*
 		List<Usuario> usuarioOrd = usuarios.stream().filter(u -> u.getPontos() < 100)
 				.sorted(Comparator.comparing(Usuario::getNome)).collect(Collectors.toList());
 		System.out.println("------------------");
