@@ -15,6 +15,9 @@ public class Capitulo7_8_Optional {
 			usuarios.add(new Usuario("usuario" + i, i * 40));
 		}
 
+		Optional<String> banana = Optional.empty();
+		banana.get();
+		
 		// Para tirar a media
 		OptionalDouble average = usuarios.stream().mapToInt(Usuario::getPontos).average();
 		double media = average.orElse(0.0);
