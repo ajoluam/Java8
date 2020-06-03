@@ -8,7 +8,7 @@ public class ValidadorNomeCompleto implements ValidadorSistemaProduto {
 	@Override
 	public <T> boolean validar(Object entrada) {
 		
-		//regex para ferificar se existe algum número e/ou c aracter especial
+		//regex para ferificar se existe algum número e/ou caracter especial
 		final String regex1 = "[(0-9)(\\\"\\'!@#$%¨&*\\(\\)\\-\\+_=§\\|,.;\\/<>:?~^}\\]º´`{\\[ª¹²³£¢¬)]";
 		//Regex para verificar se existe mais 2 letras na string
 		final String regex2 = "([a-zA-Z]).{2,}";

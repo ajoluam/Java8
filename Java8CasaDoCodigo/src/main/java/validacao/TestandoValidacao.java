@@ -4,10 +4,10 @@ public class TestandoValidacao {
 
 	public static void main(String[] args) {
 		String nome = "Alex";
-		String entrada = "nome_completo";
+		String entrada = null;
 		
 		try {
-			System.out.println(TipoDeEntrada.toEnum(entrada));
+			//System.out.println(TipoDeEntrada.toEnum(entrada));
 			
 			boolean teste = (boolean) TipoDeEntrada.toEnum(entrada).valida(nome);
 			

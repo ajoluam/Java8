@@ -22,8 +22,8 @@ public enum TipoDeEntrada {
 
 
 	public static TipoDeEntrada toEnum(String descricao) {
-		if (descricao == null || descricao.isEmpty()) {
-			return null;
+		if (descricao == null || descricao.isEmpty() || descricao.trim().isEmpty()) {
+			throw new EnumInvalidoException("Entrada Nula ou Vazia ");
 		}
 
 		for (TipoDeEntrada tipo : TipoDeEntrada.values()) {
@@ -39,9 +39,6 @@ public enum TipoDeEntrada {
 	 * Valida o campo 
 	 */
 	public Object valida(Object entrada) {
-		if (this.validador == null) {
-			return null;
-		}
 		return this.validador.validar(entrada);
 	}
 }
