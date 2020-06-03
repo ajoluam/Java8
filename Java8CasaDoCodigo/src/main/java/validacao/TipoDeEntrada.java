@@ -2,7 +2,7 @@ package validacao;
 
 public enum TipoDeEntrada {
 	
-	NOMECOMPLETO("nome_completo", new ValidadorString()),
+	NOMECOMPLETO("nome_completo", new ValidadorNomeCompleto()),
 	NOMECOMPLETOMAE("nome_completo_mae", new ValidadorNomeMae());
 	
 	private String descricao;

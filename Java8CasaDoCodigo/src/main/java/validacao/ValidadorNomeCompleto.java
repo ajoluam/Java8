@@ -3,7 +3,7 @@ package validacao;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ValidadorString implements ValidadorSistemaProduto {
+public class ValidadorNomeCompleto implements ValidadorSistemaProduto {
 
 	@Override
 	public <T> boolean validar(Object entrada) {
