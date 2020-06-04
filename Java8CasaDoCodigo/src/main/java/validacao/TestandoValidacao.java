@@ -3,8 +3,8 @@ package validacao;
 public class TestandoValidacao {
 
 	public static void main(String[] args) {
-		String nome = "Alex";
-		String entrada = null;
+		String nome = "abcabcabcs";
+		String entrada = "nome_completo";
 		
 		try {
 			//System.out.println(TipoDeEntrada.toEnum(entrada));
